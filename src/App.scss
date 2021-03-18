@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app-child {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+
+.user-list {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
 }

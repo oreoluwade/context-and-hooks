@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import MyContext from './context';
+import MyContext from '../context';
 
 const AppChild = () => {
   const { state, setState } = useContext(MyContext);
@@ -19,6 +19,7 @@ const AppChild = () => {
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      className="app-child"
     >
       <span>
         This is the App child of <h2>{state.name}</h2>

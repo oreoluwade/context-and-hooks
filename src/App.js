@@ -1,13 +1,16 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import AppProvider from './context/Provider';
-import AppChild from './AppChild';
+import AppChild from './components/AppChild';
+import UserList from './components/UserList';
 
 function App() {
   return (
     <AppProvider>
       <div className="App">
         <AppChild />
+
+        <UserList />
       </div>
     </AppProvider>
   );
